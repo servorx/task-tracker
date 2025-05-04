@@ -1,5 +1,6 @@
 NAME_FILE = "./data/tasks.json"
 
-import modules.controller.screen as sc
-
-def add()
+from modules.controller.screen import *
+from modules.menus import MENU_ADD
+def add():
+    print(MENU_ADD)
