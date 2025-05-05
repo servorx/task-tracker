@@ -12,7 +12,7 @@ def program():
         match casos:
             case 1:
                 add()
-                return program()
+                
             case 2:
                 delete()
                 return program()
@@ -23,13 +23,13 @@ def program():
                 update()
                 return program()
             case 5:
+                print("thanks for using our program :)")
                 pause_screen()
             case _:
-                print("error, ingreso una opcion que no se encuentra en el programa")
+                print("error, you entered an option that is not in the program")
                 pause_screen()
                 return program()
 
 
 if __name__ == "__main__":
-    while True:
-        program()
+    program()

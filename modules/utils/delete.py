@@ -3,4 +3,15 @@ from modules.menus import MENU_DELETE
 
 def delete():
     print(MENU_DELETE)
-    
+    try:
+        case = int(input("->"))
+    except ValueError:
+        print("error, you entered an option that is not in the program")
+        pause_screen()
+    else:
+        match case:
+            case 1:
+                pass
+            case _:
+                pause_screen()
+                pass
